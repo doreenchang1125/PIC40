@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>CSS question</title>
+      <meta charset = "utf-8" />
+      
+      <style type="text/css">
+      #div1{
+         width:50px;
+         height:50px;
+         border:1px solid black;
+         margin:10px;
+      }
+      #div2{
+         width:50px;
+         height:50px;
+         border:1px solid black;
+         padding :5px;
+      }
+      #container{
+         border:1px solid black;
+      }
+
+      </style>
+
+   </head>
+   
+   <body>
+
+
+   <div id="container">
+      <div id="div1">Text1 </div>
+      <div id="div2">Text2 </div>
+   </div>
+
+   
+   </body>
+</html>
+
+
+   
+   </body>
+</html>

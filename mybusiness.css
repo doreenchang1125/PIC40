@@ -1,0 +1,267 @@
+html,body
+{
+  margin:0;
+  padding:0;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:100%;
+  color:#000000;
+
+}
+
+blockquote p{
+	color:#FFF;
+	font-size:110%;
+	font-style: italic;
+	font-family:Merienda;
+	padding-top : 0px;
+}
+
+* {
+	color:black;
+}
+
+body {
+  background-image:url(body.jpg);
+  background-repeat:repeat-x;
+}
+
+h1,h2,h3,h4 {
+  color:#00583F;
+  font-weight:normal;
+  padding-top:10px;
+}
+
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+
+
+#main_container
+{
+  width:1000px;
+  margin:auto;
+}
+
+#header {
+	height:150px;
+	background:url(logobackground.jpg);
+	text-align:center;
+}
+
+#header h1
+{
+margin:0;
+padding:0;
+font-weight:bold;
+font-size: 65px;
+color:white;
+font-family:Merienda;
+font-style: italic;
+}
+
+#dropdown{
+	height: 40px;
+	padding-left:250px;
+	background-color:#09553F;
+}
+
+#navbar {
+	margin: 0;
+	padding: 0;
+}
+#navbar li {
+	list-style: none;
+	float: left; 
+}
+#navbar li a {
+	font-size:120%;
+	color:#FFF;
+	text-decoration:none;
+	display: block;
+	background-color:#09553F;
+	padding:8px;
+	padding-left:22px;
+}
+#navbar li ul {
+	display: none; 
+	width: 10em; /* Width to help Opera out */
+}
+#navbar li:hover ul {
+	display: block;
+	position: absolute;
+	font-size:70%;
+	margin: 0;
+	padding: 0; 
+}
+#navbar li:hover li {
+	float: none; 
+}
+#navbar li:hover li a {
+	background-color:#09553F;	
+	border-bottom: 1px solid #fff;
+	color: #FFF; 
+}
+#navbar li li a:hover {
+	background-color: #CCCC99; 
+}	
+
+#nav2 li a {
+display:block;
+padding:8px;
+}		
+
+#sidebar ul li a {
+display:block;
+padding:8px;
+}
+
+#sidebar{
+	float: left;
+	width:275px;
+	padding-top:0;
+  	padding-right:15px;
+  	padding-bottom:0;
+  	padding-left:15px;
+    background-image:url(side.jpg);
+  	background-repeat:repeat-y;
+}
+
+#sidebar p{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:85%;
+    line-height:1.4;
+}
+
+#sidebar ol, #sidebar ul{
+	font-style: italic;
+	font-size:90%;
+}
+
+#sidebar #nav2 ol{
+list-style-type:none;
+margin-bottom:20px;
+padding-bottom:153px;
+padding-top:0;
+padding-right:0;
+padding-left:0px;
+margin-top:0;
+margin-right:0;
+margin-left:0px;
+background-image:url(sidepic.jpg);
+background-repeat:no-repeat;
+background-position: bottom;
+}
+
+#sidebar #nav2 ol li a {
+font-size:100%;
+color:#FFF;
+text-decoration:none;
+display:block;
+background-color:#09553F;
+padding:8px;
+border-bottom-width:0.5px;
+border-bottom-style:solid;
+border-bottom-color:white;
+}
+
+#sidebar address{ 
+	font-size:90%;
+}
+
+#content {
+	margin-left:230px;
+	padding-top:0;
+  	padding-right:0px;
+  	padding-bottom:0;
+  	padding-left:100px;
+
+}
+
+#content caption{
+	text-decoration-style: dashed;
+	text-decoration: underline;
+}
+
+#content p, #aside p
+ {
+  font-size:85%;
+  line-height:1.4;
+}
+
+#content p{
+	text-indent: 50px;
+}
+
+
+#coffee{
+	float:right;
+	padding:5px;
+}
+
+
+table {
+	text-align:center;
+	width: 90%;
+	margin-left:25px;
+	font-family:Verdana;
+	table-layout:fixed;
+	border-collapse: collapse;
+	border:0px;
+}
+
+table caption{
+	color:#003333;
+	font-size:110%;
+}
+
+table th{
+	color:#336633 ;
+	border:0px;
+	border-bottom: 1px solid #ddd;
+}
+
+table td{
+	text-align:center;
+	border:0px;
+	border-bottom: 1px solid #ddd;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #00583F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    width: 45%;
+    cursor: pointer;
+    font-size:120%;
+}
+
+label, #howheard{
+	font-size:80%;
+}
+
+
+#footer {
+	clear:both;
+	text-align: center;
+	padding-top:2px;
+ 	padding-right:0px;
+  	padding-bottom:2px;
+  	background-color:#00593D;
+}
+
+#footer small{
+	color:white;
+}
+html,body{
+	margin:0;
+	padding:0;
+}

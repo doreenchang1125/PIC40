@@ -1,0 +1,152 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+<title>JavaScript HW3</title>
+<script type="text/javascript">
+	var result = "";
+	var op = "";
+	var op1 = "";
+
+    function display(num) {
+        var node = document.getElementById("display");  
+		node.value=num;
+     }
+
+    function get(){
+     	var node = document.getElementById("display"); 
+     	if (op == "+"){
+			node.value = "";
+			op1 = op;
+			op = "";
+			return node.value;
+		}
+		else if (op == "-"){
+			node.value = "";
+			op1 = op;
+			op = "";
+			return node.value;
+		}
+		else if (op == "*"){
+			node.value = "";
+			op1 = op;
+			op = "";
+			return node.value;
+		}
+		else if (op == "/"){
+			node.value = "";
+			op1 = op;
+			op = "";
+			return node.value;
+		}
+		else{
+			return node.value;
+		}
+     }	 
+	 
+	function equal(){
+		var node = document.getElementById("display"); 
+		var prev2 = node.value;
+		if (op1 == "+"){
+			result = Number(result) + Number(prev2);
+			op = "";
+			node.value = result;
+		}
+		else if (op1 == "-"){
+			result = Number(result) - Number(prev2);
+			op = "";
+			node.value = result;
+		}
+		else if (op1 == "*"){
+			result = Number(result) * Number(prev2);
+			op = "";
+			node.value = result;
+		}
+		else if (op1 == "/"){
+			result = Number(result) / Number(prev2);
+			op = "";
+			node.value = result;
+		}
+		else{
+			node.value = result;
+		}
+
+	}
+
+	function add(){
+		var node = document.getElementById("display"); 
+		var prev = node.value;
+		result = prev;
+		op = "+";
+
+		node.value = result;
+	}
+
+	function sub(){
+		var node = document.getElementById("display"); 
+		var prev = node.value;
+		result = prev;
+		op = "-";
+		node.value = result;
+	}
+
+	function mult(){
+		var node = document.getElementById("display"); 
+		var prev = node.value;
+		result = prev;
+		op = "*";
+		node.value = result;
+	}
+
+	function div(){
+		var node = document.getElementById("display"); 
+		var prev = node.value;
+		result = prev;
+		op = "/";
+		node.value = result;
+	}
+
+</script>
+</head>
+<body> 
+<h1>Simple calculator</h1>
+<form action="" method="get">
+<p>
+	<input type="text" id="display"/>
+</p>
+</form>
+
+<form action="" method="get">
+<p>
+	<input type="button" value="7" onclick="display(get()+7)"/>
+	<input type="button" value="8" onclick="display(get()+8)"/>
+	<input type="button" value="9" onclick="display(get()+9)"/>
+	<input type="button" value="/" onclick="div()"/>
+	<br/>
+	<input type="button" value="4" onclick="display(get()+4)"/>
+	<input type="button" value="5" onclick="display(get()+5)"/>
+	<input type="button" value="6" onclick="display(get()+6)"/>
+	<input type="button" value="*" onclick="mult()"/>
+	<br/>
+	<input type="button" value="1" onclick="display(get()+1)"/>
+	<input type="button" value="2" onclick="display(get()+2)"/>
+	<input type="button" value="3" onclick="display(get()+3)"/>
+	<input type="button" value="-" onclick="sub()"/>
+	<br/>
+	<input type="button" value="." onclick="display(get()+ '.')"/>
+	<input type="button" value="0" onclick="display(get()+0)"/>
+	<input type="button" value="=" onclick="equal()"/>
+	<input type="button" value="+" onclick="add()"/>
+</p>
+</form>
+<p>
+  <a href="http://validator.w3.org/check?uri=referer"><img
+     src="http://www.w3.org/Icons/valid-xhtml11"
+     alt="Valid XHTML 1.1" height="31" width="88" /></a>
+</p>
+</body>
+</html>
+

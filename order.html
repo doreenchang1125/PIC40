@@ -1,0 +1,136 @@
+<?xmlversion = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>My Business--Coffee</title>
+      <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+      <meta name="authors" content="Doreen Chang"/>
+      <meta name="description" content="Business Page of Doreen Chang"/>
+      <meta name="keywords" content="business, makeup, mybusiness" />
+      <meta name="copyright" content="Copyright 2018 Doreen Chang, All Rights Reserved"/>
+   </head>
+
+   <body>
+
+  <h1> Order Form </h1>
+
+<form action="" method="get">
+   <fieldset>
+    <legend>Customer Information</legend>
+    <label>Name:
+    <input type="text" name="name" value=""/>
+    </label>
+    <br />
+    <label>Street:
+    <input type="text" name="Street"/>
+    </label>
+    <br />
+    <label>City:
+    <input type="text" name="City"/>
+    </label>
+    <br />
+    <label>State:
+    <input type="text" name="State"/>
+    </label>
+    <br />
+    <label>Zipcode:
+    <input type="text" name="Zipcode"/>
+    </label>
+    <br />
+  </fieldset>
+  <fieldset>
+    <legend>Order Information</legend>
+    <label for="howheard">How did you find out about us? </label>
+    <input type="radio" name="how" value="Commercial" id ="howheard" />Commercial
+    <input type="radio" name="how" value="Magazine Ad" id ="howheard" />Magazine Ad
+    <input type="radio" name="how" value="Online Ad" id ="howheard" />Online Ad
+    <input type="radio" name="how" value="Other" id ="howheard" />Other
+    <br />
+    <label for="email">
+    <input type="checkbox" name="sendemails" value = "Yes" id="email"/> Send me emails about future products.
+    </label>
+    <br /><br />
+
+<table summary="Products" border="1"> 
+<caption>Product List</caption>
+
+<!-- the thead element appears first in the table.  It formats the table header.  -->
+<thead>
+<tr>
+   <th> Product </th>
+   <th> Description </th>
+   <th> Price </th>
+   <th> Qty </th>
+</tr>
+</thead>
+
+<!-- the tbody element encloses all the table content  -->
+<tbody>
+<tr>
+   <td><label for="arabicacoffee">Arabica Coffee</label></td>
+   <td>1 lb. bag</td>
+   <td>$14.99</td>
+   <td><input type="text" name="Qty1" id="arabicacoffee"/></td>
+</tr>
+<tr>
+   <td> <label for="bourboncoffee">Bourbon Coffee</label></td>
+   <td>1 lb. bag</td>
+   <td>$15.99</td>
+   <td><input type="text" name="Qty2" id="bourboncoffee"/></td>
+</tr>
+<tr>
+   <td><label for="robustacoffee">Robusta Coffee</label></td>
+   <td>1 lb. bag</td>
+   <td>$15.99</td>
+   <td><input type="text" name="Qty3" id="robustacoffee"/></td>
+</tr>
+<tr>
+   <td><label for="konacoffee">Kona Coffee</label></td>
+   <td>1 lb. bag</td>
+   <td>$14.99</td>
+   <td><input type="text" name="Qty4" id="konacoffee"/></td>
+</tr>
+<tr>
+   <td><label for="maragogipecoffee">Maragogipe Coffee</label></td>
+   <td>1 lb. bag</td>
+   <td>$13.99</td>
+   <td><input type="text" name="Qty5" id="maragogipecoffee"/></td>
+</tr>
+</tbody>
+</table>
+<br /><br />
+  
+    <label>Select a Credit Card.
+    <select name="creditcard">
+      <option selected="selected">Visa</option>
+      <option>Mastercard</option>
+      <option>American Express</option>
+      <option>Discover</option>
+    </select>
+  </label>
+    <br/>
+
+    <label>Credit Card Number: 
+    <input type="password" name="cardnumber"/>
+    </label>
+  </fieldset>
+  <fieldset>
+    <input type="reset" />
+    <input type="submit" value="Send" />
+    <br />
+  </fieldset>
+</form>
+
+   <h2> Try my Coffee today!</h2>
+
+   <p>
+       <a href="http://validator.w3.org/check?uri=referer"><img
+           src="http://www.w3.org/Icons/valid-xhtml11"
+           alt="Valid XHTML 1.1" height="31" width="88" /></a>
+   </p>
+
+   </body>
+</html>
